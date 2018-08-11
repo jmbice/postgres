@@ -34,7 +34,7 @@ pg_ctl -D [root directory for service] -l [root directory for service/server.log
 ```
 ps aux | grep postgres | grep -- -D
 ```
-* [root directory for service/server.log] is the above director with /server.log added.
+* [root directory for service/server.log] is the above url with '/server.log' added.
 
 
 ## Fourth Step
