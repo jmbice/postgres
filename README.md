@@ -1,6 +1,6 @@
 # postgres
 
-The purpose of repo is to provide the example code (and instructions) for uploading large quantities of data using Postgres' COPY method. It assumes you're on a mac, and have downloaded Postgres using Brew.
+The purpose of this repo is to provide the example code (and instructions) for uploading large quantities of data using Postgres' COPY method. It assumes you're on a mac, and have downloaded Postgres using Brew.
   - COPY from docs: https://www.postgresql.org/docs/9.2/static/sql-copy.html
   - Optimization guide from docs: https://www.postgresql.org/docs/current/static/populate.html
   - Recommended: you should read the docs to undersand the difference between \copy and COPY.
