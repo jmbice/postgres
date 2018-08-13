@@ -27,15 +27,8 @@ psql -U [user] -d [db] < uploadBulk/alterDefaults.sql;
 
 Restart your database, use this command:
 ```
-pg_ctl -D [root directory for service] -l [root directory for service/server.log] restart
+brew services restart postgresql
 ```
-* [root directory for service] can be found by using the command:
-
-```
-ps aux | grep postgres | grep -- -D
-```
-* [root directory for service/server.log] is the above path with '/server.log' added.
-
 
 ## Fourth Step
 
@@ -63,10 +56,5 @@ psql -U [user] -d [db] < uploadBulk/returnDefaults.sql;
 
 Finally, restart the DB again to return to default settings:
 ```
-pg_ctl -D [root directory for service] -l [root directory for service/server.log] restart
+brew services restart postgresql
 ```
-* [root directory for service] can be found by using the command:
-```
-ps aux | grep postgres | grep -- -D
-```
-* [root directory for service/server.log] is the above director with /server.log added.
